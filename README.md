@@ -1,5 +1,12 @@
 # waltid-ssikit-vclib
+
 Typesafe implementation of W3C Verifiable Credentials in order to facilitate interoperability among various applications.
+
+## Custom version
+
+### Added Verifiable Credentials
+
+- [InternationalBankAccountNumber](./src/main/kotlin/id/walt/vclib/credentials/InternationalBankAccountNumber.kt) ([JSON Schema](./src/test/resources/schemas/InternationalBankAccountNumber.json))
 
 ### Compile custom version locally
 
@@ -7,9 +14,23 @@ Typesafe implementation of W3C Verifiable Credentials in order to facilitate int
 ./gradlew build publishToMavenLocal
 ```
 
-When compilation is done, you can import the dependency `id.walt:waltid-ssikit-vclib:1.19.0-SNAPSHOT-custom_rigwild` into your project.
+When compilation is done, you can import the dependency `id.walt:waltid-ssikit-vclib:1.19.0-SNAPSHOT-with_custom_vc` into your project.
+
+#### Using Docker
 
 If you use Docker, make sure the repository is available in the scope of the Docker build.
+
+1. Edit Dockerfile to copy the repository in the build context
+
+```Dockerfile
+FROM openjdk:17-jdk-slim as buildstage
+COPY ./.m2/ /root/.m2 # <--- Add this line
+COPY ./ /
+RUN ./gradlew installDist
+[...]
+```
+
+2. Build the package and copy the repository to the scope of the Docker build
 
 ```sh
 cd ../waltid-ssikit-vclib
@@ -17,17 +38,22 @@ cd ../waltid-ssikit-vclib
 
 cd ../waltid-wallet-backend
 cp -R ~/.m2/* ./.m2/
-docker build -t waltid/ssikit-wallet-backend:custom_rigwild .
+docker build -t waltid/ssikit-wallet-backend:with_custom_vc .
 ```
 
----
+### Update from upstream
 
-### Setup
+```sh
+git remote add upstream git@github.com:walt-id/waltid-ssikit-vclib.git
+git pull upstream master
+```
+
+## Setup
 
 Add the dependency using Gradle:
 
     implementation("id.walt:waltid-ssikit-vclib:1.19.0")
-    
+
 or Maven:
 
     <dependency>
@@ -35,8 +61,9 @@ or Maven:
         <artifactId>waltid-ssikit-vclib</artifactId>
         <version>1.19.0</version>
     </dependency>
-    
-### Create a credential
+
+## Create a credential
+
 ```kotlin
 val verifiableAuthorization: VerifiableCredential = VerifiableAuthorization(
     id = "did:ebsi-eth:00000001/credentials/1872",
@@ -56,13 +83,15 @@ val verifiableAuthorization: VerifiableCredential = VerifiableAuthorization(
 )
 ```
 
-### Encode a credential to JSON
+## Encode a credential to JSON
+
 ```kotlin
 val json: String = verifiableAuthorization.encode()
 // {"@context" : ["https://www.w3.org/2018/credentials/v1", "https://ess ...
 ```
 
-### Decode a JSON credential
+## Decode a JSON credential
+
 ```kotlin
 val unknownJson: String = fromInput()
 

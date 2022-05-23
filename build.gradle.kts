@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "id.walt"
-version = "1.19.0-SNAPSHOT-custom_rigwild"
+version = "1.19.0-SNAPSHOT-with_custom_vc"
 
 
 repositories {

@@ -46,6 +46,9 @@ object VcTypeRegistry {
 
         // Verifiable mandates
         register<VerifiableMandate>(VerifiableMandate)
+
+        // IBAN
+        register<InternationalBankAccountNumber>(InternationalBankAccountNumber)
     }
 
     class TypeRegistration(
