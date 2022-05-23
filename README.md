@@ -1,6 +1,26 @@
 # waltid-ssikit-vclib
 Typesafe implementation of W3C Verifiable Credentials in order to facilitate interoperability among various applications.
 
+### Compile custom version locally
+
+```sh
+./gradlew build publishToMavenLocal
+```
+
+When compilation is done, you can import the dependency `id.walt:waltid-ssikit-vclib:1.19.0-SNAPSHOT-custom_rigwild` into your project.
+
+If you use Docker, make sure the repository is available in the scope of the Docker build.
+
+```sh
+cd ../waltid-ssikit-vclib
+./gradlew build publishToMavenLocal
+
+cd ../waltid-wallet-backend
+cp -R ~/.m2/* ./.m2/
+docker build -t waltid/ssikit-wallet-backend:custom_rigwild .
+```
+
+---
 
 ### Setup
 
