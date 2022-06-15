@@ -36,9 +36,9 @@ RUN ./gradlew installDist
 cd ../waltid-ssikit-vclib
 ./gradlew build publishToMavenLocal
 
-cd ../waltid-wallet-backend
+cd ../waltid-walletkit
 cp -R ~/.m2/* ./.m2/
-docker build -t waltid/ssikit-wallet-backend:with_custom_vc .
+docker build -t waltid/walletkit:with_custom_vc .
 ```
 
 ### Update from upstream

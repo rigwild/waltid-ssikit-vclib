@@ -41,7 +41,7 @@ data class InternationalBankAccountNumber(
                     iban = "FR7610011000201234567890188",
                 ),
                 credentialSchema = CredentialSchema(
-                    id = "https://raw.githubusercontent.com/rigwild/waltid-ssikit-vclib/master/src/test/resources/serialized/InternationalBankAccountNumber.json",
+                    id = "https://raw.githubusercontent.com/rigwild/waltid-ssikit-vclib/master/src/test/resources/schemas/InternationalBankAccountNumber.json",
                     type = "JsonSchemaValidator2018"
                 ),
             )
