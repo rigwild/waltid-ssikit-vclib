@@ -49,6 +49,8 @@ object VcTypeRegistry {
 
         // IBAN
         register<InternationalBankAccountNumber>(InternationalBankAccountNumber)
+
+        register<OpenBadgeCredential>(OpenBadgeCredential)
     }
 
     class TypeRegistration(

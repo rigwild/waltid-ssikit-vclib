@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "id.walt"
-version = "1.19.0-SNAPSHOT-with_custom_vc"
+version = "1.21.0-SNAPSHOT-with_custom_vc"
 
 
 repositories {
