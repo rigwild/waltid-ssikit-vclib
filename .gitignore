@@ -306,3 +306,5 @@ data
 secret_maven_username.txt
 secret_maven_password.txt
 
+.m2/*
+!.m2/.gitkeep
