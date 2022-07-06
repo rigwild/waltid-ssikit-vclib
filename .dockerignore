@@ -1,2 +1,6 @@
-.m2
 .gradle
+.git
+.idea
+build
+Dockerfile
+.m2
