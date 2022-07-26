@@ -59,7 +59,7 @@ or Maven:
     <dependency>
         <groupId>id.walt</groupId>
         <artifactId>waltid-ssikit-vclib</artifactId>
-        <version>1.21.0</version>
+        <version>1.22.0</version>
     </dependency>
 
 ## Create a credential

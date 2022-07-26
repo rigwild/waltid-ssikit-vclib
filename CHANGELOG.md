@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
+## [1.22.0] - 2022-06-20
+
+## [1.22.0] - 2022-06-20
+
+-   Added Gaia-X LegalPerson Credential 
+-   Updated ParticipantCredential and added "hash"
+
 ## [1.21.0] - 2022-06-15
 
 -   Instructions how to add VC templates including link to <https://vc-creator.walt.id/>
@@ -209,7 +216,11 @@ All notable changes to this project will be documented in this file.
 
 -   Initial release
 
-[Unreleased]: https://github.com/walt-id/waltid-ssikit-vclib/compare/1.21.0...HEAD
+[Unreleased]: https://github.com/walt-id/waltid-ssikit-vclib/compare/1.22.0...HEAD
+
+[1.22.0]: https://github.com/walt-id/waltid-ssikit-vclib/compare/1.22.0...1.22.0
+
+[1.22.0]: https://github.com/walt-id/waltid-ssikit-vclib/compare/1.21.0...1.22.0
 
 [1.21.0]: https://github.com/walt-id/waltid-ssikit-vclib/compare/1.20.0...1.21.0
 
