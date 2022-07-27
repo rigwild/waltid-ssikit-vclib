@@ -14,7 +14,7 @@ Typesafe implementation of W3C Verifiable Credentials in order to facilitate int
 ./gradlew build publishToMavenLocal
 ```
 
-When compilation is done, you can import the dependency `id.walt:waltid-ssikit-vclib:1.21.0-SNAPSHOT-with_custom_vc` into your project.
+When compilation is done, you can import the dependency `id.walt:waltid-ssikit-vclib:1.22.0-SNAPSHOT-with_custom_vc` into your project.
 
 #### Using Docker
 

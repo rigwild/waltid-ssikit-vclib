@@ -1,6 +1,7 @@
 .gradle
 .git
 .idea
+bin
 build
 Dockerfile
 .m2
