@@ -7,6 +7,7 @@ Typesafe implementation of W3C Verifiable Credentials in order to facilitate int
 ### Added Verifiable Credentials
 
 - [InternationalBankAccountNumber](./src/main/kotlin/id/walt/vclib/credentials/InternationalBankAccountNumber.kt) ([JSON Schema](./src/test/resources/schemas/InternationalBankAccountNumber.json))
+- [ProofOfLegalAge](./src/main/kotlin/id/walt/vclib/credentials/ProofOfLegalAge.kt) ([JSON Schema](./src/test/resources/schemas/ProofOfLegalAge.json))
 
 ### Compile custom version locally
 
@@ -14,7 +15,7 @@ Typesafe implementation of W3C Verifiable Credentials in order to facilitate int
 ./gradlew build publishToMavenLocal
 ```
 
-When compilation is done, you can import the dependency `id.walt:waltid-ssikit-vclib:1.22.0-SNAPSHOT-with_custom_vc` into your project.
+When compilation is done, you can import the dependency `id.walt:waltid-ssikit-vclib:99.22.0-SNAPSHOT-with_custom_vc` into your project.
 
 #### Using Docker
 

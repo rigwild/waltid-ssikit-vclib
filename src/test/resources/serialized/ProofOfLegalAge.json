@@ -1,0 +1,18 @@
+{
+  "@context": ["https://www.w3.org/2018/credentials/v1"],
+  "credentialSchema": {
+    "id": "https://raw.githubusercontent.com/rigwild/waltid-ssikit-vclib/master/src/test/resources/schemas/ProofOfLegalAge.json",
+    "type": "JsonSchemaValidator2018"
+  },
+  "credentialSubject": {
+    "countryLegalAge": 18,
+    "hasLegalAge": true,
+    "id": "did:ebsi:zhKGqyMtioWhazYuYhrChU7"
+  },
+  "id": "urn:uuid:ea34b670-ff42-4f6b-b29a-342d01726a0b",
+  "issued": "2022-08-25T03:43:33.738142176Z",
+  "issuer": "did:ebsi:z24Ng332vPhqEXC9Rg2RQPjX",
+  "validFrom": "2022-08-25T03:43:33.738145166Z",
+  "issuanceDate": "2022-08-25T03:43:33.738145166Z",
+  "type": ["VerifiableCredential", "ProofOfLegalAge"]
+}

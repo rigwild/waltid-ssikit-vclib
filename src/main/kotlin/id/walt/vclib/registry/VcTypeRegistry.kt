@@ -28,7 +28,7 @@ object VcTypeRegistry {
         register<ProofOfResidence>(ProofOfResidence)
         register<EuropeanBankIdentity>(EuropeanBankIdentity)
 
-        //Amlet
+        // Amlet
         register<AmletCredential>(AmletCredential)
 
         // Gaiax
@@ -48,10 +48,14 @@ object VcTypeRegistry {
         // Verifiable mandates
         register<VerifiableMandate>(VerifiableMandate)
 
+        register<OpenBadgeCredential>(OpenBadgeCredential)
+
+        // ########################
+        // ## CUSTOM CREDENTIALS ##
+        // ########################
+        register<ProofOfLegalAge>(ProofOfLegalAge)
         // IBAN
         register<InternationalBankAccountNumber>(InternationalBankAccountNumber)
-
-        register<OpenBadgeCredential>(OpenBadgeCredential)
     }
 
     class TypeRegistration(
